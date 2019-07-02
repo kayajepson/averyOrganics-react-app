@@ -3,295 +3,303 @@ import LeftContent from './LeftContent';
 import Crop from './Crop';
 
 function LeftSide() {
-    var leftPosition = {
-        // gridColumn: '7/8',
-        maxWidth: "500px",
-    }
+  var leftPosition = {
+    // gridColumn: '7/8',
+    minWidth: "500px",
+    maxWidth: "500px",
+    zIndex: "30"
+  }
+  
+    var topStyle = {
+      position: "relative",
+      zIndex: "1",
+      margin: '0 auto'
+      // marginTop: "-325px",
+      // marginLeft: "-200px"
+      }
 
-    const availableProduce = [
-   {
+  const availableProduce = [
+    {
       month: "January",
       selection: [
-         "Apples",
-         "Hazelnuts",
-         "Pears",
-         "Garlic",
-         "Mushrooms",
-         "Onions",
-         "Potatoes",
-         "Turnips"
+        "Apples",
+        "Hazelnuts",
+        "Pears",
+        "Garlic",
+        "Mushrooms",
+        "Onions",
+        "Potatoes",
+        "Turnips"
       ]
-   },
-   {
+    },
+    {
       month: "February",
       selection: [
-         "Apples",
-         "Hazelnuts",
-         "Pears",
-         "Garlic",
-         "Mushrooms",
-         "Onions",
-         "Potatoes"
+        "Apples",
+        "Hazelnuts",
+        "Pears",
+        "Garlic",
+        "Mushrooms",
+        "Onions",
+        "Potatoes"
       ]
-   },
-   {
+    },
+    {
       month: "March",
       selection: [
-         "Apples",
-         "Hazelnuts",
-         "Pears",
-         "Rhubarb",
-         "Garlic",
-         "Mushrooms",
-         "Onions",
-         "Potatoes"
+        "Apples",
+        "Hazelnuts",
+        "Pears",
+        "Rhubarb",
+        "Garlic",
+        "Mushrooms",
+        "Onions",
+        "Potatoes"
       ]
-   },
-   {
+    },
+    {
       month: "April",
       selection: [
-         "Apples",
-         "Hazelnuts",
-         "Pears",
-         "Rhubarb",
-         "Asparagus",
-         "Garlic",
-         "Lettuce",
-         "Mushrooms",
-         "Onions",
-         "Potatoes"
+        "Apples",
+        "Hazelnuts",
+        "Pears",
+        "Rhubarb",
+        "Asparagus",
+        "Garlic",
+        "Lettuce",
+        "Mushrooms",
+        "Onions",
+        "Potatoes"
       ]
-   },
-   {
+    },
+    {
       month: "May",
       selection: [
-         "Apples",
-         "Hazelnuts",
-         "Pears",
-         "Rhubarb",
-         "Asparagus",
-         "Cauliflower",
-         "Garlic",
-         "Lettuce",
-         "Potatoes",
-         "Radishes"
+        "Apples",
+        "Hazelnuts",
+        "Pears",
+        "Rhubarb",
+        "Asparagus",
+        "Cauliflower",
+        "Garlic",
+        "Lettuce",
+        "Potatoes",
+        "Radishes"
       ]
-   },
-   {
+    },
+    {
       month: "June",
       selection: [
-         "Apples",
-         "Hazelnuts",
-         "Pears",
-         "Rhubarb",
-         "Blackberries",
-         "Cherries",
-         "Raspberries",
-         "Strawberries",
-         "Asparagus",
-         "Broccoli",
-         "Cauliflower",
-         "Kohlrabi",
-         "Lettuce",
-         "Mushrooms",
-         "Potatoes",
-         "Radishes",
-         "Squash"
+        "Apples",
+        "Hazelnuts",
+        "Pears",
+        "Rhubarb",
+        "Blackberries",
+        "Cherries",
+        "Raspberries",
+        "Strawberries",
+        "Asparagus",
+        "Broccoli",
+        "Cauliflower",
+        "Kohlrabi",
+        "Lettuce",
+        "Mushrooms",
+        "Potatoes",
+        "Radishes",
+        "Squash"
       ]
-   },
-   {
+    },
+    {
       month: "July",
       selection: [
-         "Apples",
-         "Hazelnuts",
-         "Pears",
-         "Rhubarb",
-         "Apricots",
-         "Blackberries",
-         "Blueberries",
-         "Cherries",
-         "Melons",
-         "Nectarines",
-         "Peaches",
-         "Raspberries",
-         "Strawberries",
-         "Tomatoes",
-         "Beets",
-         "Broccoli",
-         "Brussel Sprouts",
-         "Cabbage",
-         "Carrots",
-         "Cauliflower",
-         "Cucumber",
-         "Eggplant",
-         "Garlic",
-         "Green Beans",
-         "Kohlrabi",
-         "Lettuce",
-         "Mushrooms",
-         "Potatoes",
-         "Radishes",
-         "Squash",
-         "Turnips"
+        "Apples",
+        "Hazelnuts",
+        "Pears",
+        "Rhubarb",
+        "Apricots",
+        "Blackberries",
+        "Blueberries",
+        "Cherries",
+        "Melons",
+        "Nectarines",
+        "Peaches",
+        "Raspberries",
+        "Strawberries",
+        "Tomatoes",
+        "Beets",
+        "Broccoli",
+        "Brussel Sprouts",
+        "Cabbage",
+        "Carrots",
+        "Cauliflower",
+        "Cucumber",
+        "Eggplant",
+        "Garlic",
+        "Green Beans",
+        "Kohlrabi",
+        "Lettuce",
+        "Mushrooms",
+        "Potatoes",
+        "Radishes",
+        "Squash",
+        "Turnips"
       ]
-   },
-   {
+    },
+    {
       month: "August",
       selection: [
-         "Apples",
-         "Apricots",
-         "Blackberries",
-         "Blueberries",
-         "Cherries",
-         "Melons",
-         "Nectarines",
-         "Peaches",
-         "Pears",
-         "Plums",
-         "Raspberries",
-         "Rhubarb",
-         "Strawberries",
-         "Tomatoes",
-         "Beets",
-         "Broccoli",
-         "Brussel Sprouts",
-         "Cabbage",
-         "Carrots",
-         "Cauliflower",
-         "Corn",
-         "Cucumber",
-         "Eggplant",
-         "Garlic",
-         "Green Beans",
-         "Kohlrabi",
-         "Lettuce",
-         "Mushrooms",
-         "Onions",
-         "Peas",
-         "Peppers",
-         "Potatoes",
-         "Radishes",
-         "Squash",
-         "Turnips"
+        "Apples",
+        "Apricots",
+        "Blackberries",
+        "Blueberries",
+        "Cherries",
+        "Melons",
+        "Nectarines",
+        "Peaches",
+        "Pears",
+        "Plums",
+        "Raspberries",
+        "Rhubarb",
+        "Strawberries",
+        "Tomatoes",
+        "Beets",
+        "Broccoli",
+        "Brussel Sprouts",
+        "Cabbage",
+        "Carrots",
+        "Cauliflower",
+        "Corn",
+        "Cucumber",
+        "Eggplant",
+        "Garlic",
+        "Green Beans",
+        "Kohlrabi",
+        "Lettuce",
+        "Mushrooms",
+        "Onions",
+        "Peas",
+        "Peppers",
+        "Potatoes",
+        "Radishes",
+        "Squash",
+        "Turnips"
       ]
-   },
-   {
+    },
+    {
       month: "September",
       selection: [
-         "Apples",
-         "Blueberries",
-         "Grapes",
-         "Melons",
-         "Peaches",
-         "Pears",
-         "Plums",
-         "Raspberries",
-         "Tomatoes",
-         "Broccoli",
-         "Brussel Sprouts",
-         "Cabbage",
-         "Carrots",
-         "Cauliflower",
-         "Corn",
-         "Cucumber",
-         "Eggplant",
-         "Garlic",
-         "Green Beans",
-         "Kohlrabi",
-         "Lettuce",
-         "Mushrooms",
-         "Onions",
-         "Peas",
-         "Peppers",
-         "Potatoes",
-         "Radishes",
-         "Squash",
-         "Turnips"
+        "Apples",
+        "Blueberries",
+        "Grapes",
+        "Melons",
+        "Peaches",
+        "Pears",
+        "Plums",
+        "Raspberries",
+        "Tomatoes",
+        "Broccoli",
+        "Brussel Sprouts",
+        "Cabbage",
+        "Carrots",
+        "Cauliflower",
+        "Corn",
+        "Cucumber",
+        "Eggplant",
+        "Garlic",
+        "Green Beans",
+        "Kohlrabi",
+        "Lettuce",
+        "Mushrooms",
+        "Onions",
+        "Peas",
+        "Peppers",
+        "Potatoes",
+        "Radishes",
+        "Squash",
+        "Turnips"
       ]
-   },
-   {
+    },
+    {
       month: "October",
       selection: [
-         "Apples",
-         "Grapes",
-         "Hazelnuts",
-         "Melons",
-         "Peaches",
-         "Pears",
-         "Tomatoes",
-         "Broccoli",
-         "Brussel Sprouts",
-         "Cabbage",
-         "Carrots",
-         "Cauliflower",
-         "Corn",
-         "Cucumber",
-         "Eggplant",
-         "Garlic",
-         "Green Beans",
-         "Kohlrabi",
-         "Lettuce",
-         "Mushrooms",
-         "Onions",
-         "Peas",
-         "Peppers",
-         "Potatoes",
-         "Pumpkins",
-         "Radishes",
-         "Squash",
-         "Turnips"
+        "Apples",
+        "Grapes",
+        "Hazelnuts",
+        "Melons",
+        "Peaches",
+        "Pears",
+        "Tomatoes",
+        "Broccoli",
+        "Brussel Sprouts",
+        "Cabbage",
+        "Carrots",
+        "Cauliflower",
+        "Corn",
+        "Cucumber",
+        "Eggplant",
+        "Garlic",
+        "Green Beans",
+        "Kohlrabi",
+        "Lettuce",
+        "Mushrooms",
+        "Onions",
+        "Peas",
+        "Peppers",
+        "Potatoes",
+        "Pumpkins",
+        "Radishes",
+        "Squash",
+        "Turnips"
       ]
-   },
-   {
+    },
+    {
       month: "November",
       selection: [
-         "Apples",
-         "Hazelnuts",
-         "Pears",
-         "Broccoli",
-         "Carrots",
-         "Cauliflower",
-         "Garlic",
-         "Mushrooms",
-         "Onions",
-         "Potatoes",
-         "Squash",
-         "Turnips"
+        "Apples",
+        "Hazelnuts",
+        "Pears",
+        "Broccoli",
+        "Carrots",
+        "Cauliflower",
+        "Garlic",
+        "Mushrooms",
+        "Onions",
+        "Potatoes",
+        "Squash",
+        "Turnips"
       ]
-   },
-   {
+    },
+    {
       month: "December",
       selection: [
-         "Apples",
-         "Hazelnuts",
-         "Pears",
+        "Apples",
+        "Hazelnuts",
+        "Pears",
         "Broccoli",
-         "Carrots",
-         "Cauliflower",
-         "Garlic",
-         "Mushrooms",
-         "Onions",
-         "Potatoes",
-         "Turnips"
+        "Carrots",
+        "Cauliflower",
+        "Garlic",
+        "Mushrooms",
+        "Onions",
+        "Potatoes",
+        "Turnips"
       ]
-   }
-];
+    }
+  ];
 
-    return (
-      <div>
-        <div style={leftPosition}>
-          <img width={900} alt="900x500"  src={require('../assets/balm_of_peru.png')}/>
-        </div>
-        <div style={leftPosition}>
-          {availableProduce.map((season, index) =>
-        <LeftContent
-          month={season.month}
-          selection={season.selection.map(select => <p>{select}</p>)}
-          key={index}/>
-      )}
-        </div>
+  return (
+    <div style={topStyle}>
+
+      <div style={leftPosition}>
+        {availableProduce.map((season, index) =>
+          <LeftContent
+            month={season.month}
+            selection={season.selection.map(select => <p>{select}</p>)}
+            key={index}/>
+        )}
       </div>
-    )
+    </div>
+  )
 }
 
 export default LeftSide;

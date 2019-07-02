@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 function LeftContent(props) {
   var leftPosition = {
     color: 'red',
+    alignContent: 'center'
     // gridColumn: '1/6'
 
   }

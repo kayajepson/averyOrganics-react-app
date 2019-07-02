@@ -5,6 +5,7 @@ import Detail from './Detail';
 function RightSide() {
     var rightPosition = {
         // gridColumn: '7/8',
+        maxWidth: "300px"
 
     }
 
@@ -54,7 +55,7 @@ function RightSide() {
           day={weekday.day}
           location={weekday.location}
           hours={weekday.hours}
-          booth={weekday.booth} 
+          booth={weekday.booth}
           key={index}/>
       )}
         </div>
