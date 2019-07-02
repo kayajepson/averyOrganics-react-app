@@ -12,7 +12,7 @@ function MainContainer() {
         paddingRight: '5%',
         paddingLeft: '2%',
         paddingTop: '2%',
-        height: '95vh',
+        height: '100vh',
       }
 
     //   .container {
