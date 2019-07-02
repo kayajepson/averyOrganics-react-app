@@ -8,7 +8,7 @@ function MainContainer() {
         display: 'grid',
         gridTemplateColumns: '6fr 2fr',
         gridTemplateArea: 'left right',
-        backgroundColor: '#ffffff',
+        backgroundColor: '#dadada',
         paddingRight: '5%',
         paddingLeft: '2%',
         paddingTop: '2%',

@@ -13,7 +13,7 @@ function RightContent(props) {
     padding: '1px',
     borderTopLeftRadius: '5px',
     borderTopRightRadius: '5px',
-    backgroundColor: '#ff4500',
+    backgroundColor: '#a08db5',
     color: 'white',
     fontSize: '10px'
   }
